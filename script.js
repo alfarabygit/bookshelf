@@ -36,3 +36,14 @@ function changeText() {
     textSubmit.innerText = "Belum Selesai Dibaca";
   }
 }
+
+// scroll reveal animation
+const sr = ScrollReveal({
+  distance: "60px",
+  duration: 3000,
+  delay: 300,
+  // reset: true,
+});
+sr.reveal(`.head_bar__title`);
+sr.reveal(`.input_section, .search_section`, { delay: 500, origin: "bottom" });
+sr.reveal(`.book_shelf`, { delay: 600, origin: "left" });
